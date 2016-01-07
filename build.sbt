@@ -1,3 +1,5 @@
+scalaVersion := "2.10.6"
+
 lazy val commonSettings = Seq(
   organization := "net.pishen",
   version := "0.12.0",
@@ -32,7 +34,7 @@ lazy val core = (project in file("core"))
     )
   )
 
-lazy val sbt = (project in file("sbt"))
+lazy val sbt_renamed = (project in file("sbt"))
   .settings(commonSettings: _*)
   .settings(
     sbtPlugin := true,
